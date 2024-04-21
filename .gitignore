@@ -1,6 +1,7 @@
 *.a
 *.d
 *.o
+*.exe
 bin/geometry
 .vscode
 
