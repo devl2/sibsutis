@@ -2,6 +2,7 @@
 *.d
 *.o
 *.exe
+build
 bin/geometry
 .vscode
 
