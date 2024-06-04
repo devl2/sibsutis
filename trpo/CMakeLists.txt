@@ -1,9 +1,27 @@
-# Подключение Google Test
-add_subdirectory(app/googletest-main) # Путь к каталогу с Google Test
-include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+cmake_minimum_required(VERSION 3.10)
+project(ahinea)
 
-# Создание исполняемого файла для тестов
-add_executable(quiz test.cpp)
+set(CMAKE_CXX_STANDARD 20)
 
-# Целевые библиотеки для тестов
-target_link_libraries(quiz gtest gtest_main)
+set(SFML_STATIC_LIBRARIES FALSE)
+set(BUILD_SHARED_LIBS TRUE)
+
+file(GLOB SOURCES "app/game/*.cpp")
+
+# Добавление исполняемого файла основного приложения
+add_executable(${PROJECT_NAME} ${SOURCES})
+target_include_directories(${PROJECT_NAME} PRIVATE include external/SFML/include)
+
+# Добавление подкаталогов SFML и GoogleTest
+add_subdirectory(external/googletest)
+add_subdirectory(external/SFML)
+
+# Подключение библиотек SFML
+find_package(SFML-2.6.1 COMPONENTS graphics window system audio REQUIRED)
+target_link_libraries(${PROJECT_NAME} sfml-graphics sfml-window sfml-system sfml-audio)
+
+# Настройка тестов
+enable_testing()
+add_executable(quiz_tests test.cpp)
+target_link_libraries(quiz_tests gtest gtest_main)
+add_test(NAME quiz_tests COMMAND quiz_tests)

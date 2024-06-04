@@ -1,81 +1,32 @@
 default:
-  image: registry.csc.sibsutis.ru/trpo/ci
+  image: ubuntu:latest
 
-.before_script_common:
-  before_script:
-    - echo "Initializing submodules..."
-    - git submodule sync --recursive
+stages:
+  - install
+  - build
+  - test
+  - check-codestyle
+
+variables:
+  SFML_DIR: "external/SFML"
+  GTEST_DIR: "external/googletest"
+
+install:
+  stage: install
+  script:
+    - apt-get update -y
+    - apt-get install -y git cmake make clang-format
+    - rm -rf $SFML_DIR
+    - rm -rf $GTEST_DIR
     - git submodule update --init --recursive
     - git submodule status
-    - ls -la external/SFML
+    - ls -la $SFML_DIR
+    - ls -la $GTEST_DIR
 
-.build-sfml:
-  stage: build
-  script:
-    - apk update && apk add --no-cache wget
-    - wget https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-Linux-x86_64.sh
-    - sh cmake-3.22.0-Linux-x86_64.sh --skip-license --prefix=/usr/local
-    - rm cmake-3.22.0-Linux-x86_64.sh
-    - echo "Building SFML..."
-    - mkdir -p external/SFML/build
-    - cd external/SFML/build
-    - cmake ..
-    - make
-    - sudo make install  # Установите SFML в системные директории
 
-.build-script:
-  script:
-    - echo "Compiling the code..."
-    - make
-
-.check-codestyle:
+check-codestyle:
+  stage: check-codestyle
   script:
     - echo "Check codestyle..."
     - git ls-files *.{cpp,hpp} | xargs clang-format -i --verbose && git diff --exit-code
-    - echo "Codestyle is fine."
-
-.test:
-  script:
-    - echo "Running unit tests..."
-    - make test
-    - echo "Test is fine"
-
-stages:
-  - build-sfml
-  - check-codestyle
-  - build
-  - test
-
-build_sfml:
-  stage: build-sfml
-  extends: .before_script_common
-  script:
-    - apk update && apk add --no-cache wget
-    - wget https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-Linux-x86_64.sh
-    - sh cmake-3.22.0-Linux-x86_64.sh --skip-license --prefix=/usr/local
-    - rm cmake-3.22.0-Linux-x86_64.sh
-    - mkdir -p external/SFML/build
-    - cd external/SFML/build
-    - cmake -B external/SFML/build
-    - make
-    - sudo make install
-
-checkstyle:
-  stage: check-codestyle
-  extends: .before_script_common
-  script:
-    - echo "Check codestyle..."
-    - git ls-files *.cpp *.h | xargs clang-format -i --verbose && git diff --exit-code
     - echo "Codestyle is fine"
-
-build:
-  stage: build
-  extends: .before_script_common
-  script:
-    - make
-
-test:
-  stage: test
-  extends: .before_script_common
-  script:
-    - make test

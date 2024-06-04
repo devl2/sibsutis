@@ -2,12 +2,12 @@ CC = g++
 CFLAGS = -Wall -Wextra -std=c++2a -pthread
 
 SFML_DIR = external/SFML
-SFML_INCLUDE = -I/usr/include/SFML
+SFML_INCLUDE = -I$(SFML_DIR)/include
 SFML_LIBS = -lsfml-graphics -lsfml-window -lsfml-system
 
-GTEST_DIR = googletest-main
+GTEST_DIR = external/googletest
 GTEST_BUILD_DIR = $(GTEST_DIR)/build
-GTEST_INCLUDE = -I$(GTEST_DIR)/include
+GTEST_INCLUDE = -I$(GTEST_DIR)/googletest/include
 GTEST_LIB = $(GTEST_BUILD_DIR)/lib/libgtest.a
 
 SRC_DIR = app
@@ -41,3 +41,6 @@ $(TEST_EXECUTABLE): $(TEST_OBJECTS)
 
 clean:
 	rm -f $(EXECUTABLE) $(OBJECTS) $(TEST_EXECUTABLE) $(TEST_OBJECTS)
+
+format: 
+	clang-format -i  $(SOURCES) $(TEST_SOURCES)
