@@ -1,0 +1,56 @@
+{
+  "incomes": [
+    {
+      "value": 123,
+      "date": "2024-12-14",
+      "currency": "RUB",
+      "type": {
+        "name": "Прочее"
+      },
+      "name": "qwe",
+      "id": "f3e92626-47e5-485e-ba75-5703dfd5d24f"
+    },
+    {
+      "value": 1233,
+      "date": "2024-12-14",
+      "currency": "RUB",
+      "type": {
+        "name": "Прочее"
+      },
+      "name": "qwe",
+      "id": "632a0e42-3db2-4ea3-b951-d4a6ee7259f6"
+    },
+    {
+      "value": 21312,
+      "date": "2024-12-14",
+      "currency": "RUB",
+      "type": {
+        "name": "Зарплата"
+      },
+      "name": "qwe",
+      "id": "a44121bc-2b7d-4def-a515-c8c8269d22c8"
+    }
+  ],
+  "expenses": [
+    {
+      "value": 12321,
+      "date": "2024-12-14",
+      "currency": "RUB",
+      "type": {
+        "name": "Прочее"
+      },
+      "name": "qwewq",
+      "id": "a8f5f473-ef7b-4a61-aec1-92b102bbb76b"
+    },
+    {
+      "value": 12312,
+      "date": "2024-12-14",
+      "currency": "RUB",
+      "type": {
+        "name": "Прочее"
+      },
+      "name": "wqewq",
+      "id": "9b27a8cd-d0ce-4862-a43f-c94b7ef131db"
+    }
+  ]
+}

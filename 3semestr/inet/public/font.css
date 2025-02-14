@@ -1,0 +1,14 @@
+.sidebar {
+   background-color: #000000;
+ }
+ .sidebar .nav-link {
+   color: #ffffff;
+ }
+ .sidebar .nav-link:hover {
+   background-color: #184588;
+   border-radius: 4px;
+ }
+ .sidebar h4 {
+   color: #ffffff;
+ }
+ 
