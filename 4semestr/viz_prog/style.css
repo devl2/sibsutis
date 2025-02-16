@@ -1,53 +1,43 @@
-.main
-{
+.main{
     display: grid;
     gap: 42px;
-    place-items: left ;
-    
-
+    place-items: left;
 }
+
 header{
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     font-family: Inter;
     background-color: rgb(27, 84, 221);
     color: rgb(255, 255, 255);
     text-align: center;
-    grid:header;
+    grid: header;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    align-items: center;
     font-family: Inter;
-    grid:body;
+    grid: body;
 }
 
 footer{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Inter;
     background-color: rgb(232,232,232);
-    padding: 26px, 180px, 26px, 180px;
-    grid:footer;
-}
-.cat1 ,.cat2, .cat3
-{
-    margin-left: 5%;
-    display: flex;
-    flex-direction:row;
+    padding: 26px;
+    grid: footer;
 }
 
-p{
-    text-indent: 2px;
+.cat1, .cat2, .cat3{
+    display: flex;
+    flex-direction:row;
 }
 
 img{
@@ -62,11 +52,11 @@ img{
 }
 
 .undertitle{
-    font-family: Inter, serif;
+    font-family: Inter;
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
-    padding-bottom: 32px ;
+    padding-bottom: 32px;
 }
 
 img .main_cat{
@@ -90,6 +80,7 @@ img .main_cat{
 }
 
 .button_cta{
+    font-family: Inter;
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
@@ -99,22 +90,14 @@ img .main_cat{
     padding: 12px 24px;
     margin: 32px;
 }
-.button_cta:hover{
-    background-color: skyblue;
-}
-
-.cat1, .cat2, .cat3{
-    padding: 32px;
-}
 
 .cat1 img, .cat2 img, .cat3 img{
-
+    padding-left: 60px;
     width: 240px;
     height: 240px;
 }
 
 .cat1 .text-content1, .cat2 .text-content2, .cat3 .text-content3{
-    
     flex-direction: column;
     padding-left: 32px;
     line-height: 17px;
@@ -136,38 +119,42 @@ img .main_cat{
 }
 
 .button_cta1{
-    font-family: Inter, italic;
+    font-family: Inter;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 600px;
     line-height: 17px;
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: rgb(27, 84, 221);
     color: rgb(255, 255, 255);
     padding: 12px 24px;
-    margin:32px;
-    
-}
-.button_cta1:hover{
-    background-color: skyblue;
 }
 
-.icons{
-    padding: 26px;
-    size: 18px;
+.icons .twitter, .icons .facebook, .icons .insta{
+    width: 18px;
+    height: 18px;
+}
+
+.icons .facebook{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .link_site{
     font-weight: 400;
-    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 .author{
     font-size: 10px;
     font-weight: 400;
     line-height: 16px;
+    text-align: center;
 }
 
-
+.responsive-break {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .main {
@@ -175,8 +162,8 @@ img .main_cat{
     }
 
     header, body, footer {
-        
         padding: 20px;
+        width: 100%;
     }
 
     .cat1, .cat2, .cat3 {
@@ -190,27 +177,10 @@ img .main_cat{
         height: auto;
     }
 
-    .title {
-        font-size: 24px;
+    .responsive-break {
+        display: block;
     }
 
-    .undertitle {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .fact {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .story {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .button_cta, .button_cta1 {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
 }
+
+
