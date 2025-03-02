@@ -1,0 +1,41 @@
+body {
+    margin: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+    background-color: black;
+}
+
+.item {
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.start {
+    background-color: orange;
+}
+
+.end {
+    background-color: limegreen;
+}
+
+@media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      height: 400px;
+      justify-content: center;
+      width: 100em;
+    }
+}
