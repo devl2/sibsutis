@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\repos\\commentrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repos\\commentrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\repos\\icommentrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repos\\icommentrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\controllers\\controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|c:\\users\\bokiy\\source\\repos\\webapplication1\\webapplication1\\models\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AA7499-7454-4578-8339-AF80FDF2A941}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Services\\CommentService.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\CommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:24:56.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICommentRepos.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Repos\\ICommentRepos.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repos\\ICommentRepos.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Repos\\ICommentRepos.cs",
+              "RelativeToolTip": "WebApplication1\\Repos\\ICommentRepos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:24:34.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentRepos.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Repos\\CommentRepos.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repos\\CommentRepos.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Repos\\CommentRepos.cs",
+              "RelativeToolTip": "WebApplication1\\Repos\\CommentRepos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:24:23.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Comments.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Models\\Comments.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Comments.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Models\\Comments.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Comments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:24:06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Controllers.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\Controllers.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Controllers.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\Controllers.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Controllers.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:23:50.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:00:19.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
