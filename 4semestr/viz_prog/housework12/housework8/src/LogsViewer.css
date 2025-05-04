@@ -1,0 +1,18 @@
+.date-picker {
+    width: 100%;
+    padding: 16.5px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .date-picker:hover {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .date-picker:focus {
+    outline: none;
+    border-color: #1976d2;
+    border-width: 2px;
+  }

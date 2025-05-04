@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PcfL8TM2JeA=",
+  "dgSpecHash": "R0RG/1wq5SY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bokiy\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "D:\\sibsutis\\4semestr\\viz_prog\\housework10\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bokiy\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
     "C:\\Users\\bokiy\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
